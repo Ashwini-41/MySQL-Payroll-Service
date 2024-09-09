@@ -27,6 +27,15 @@ UPDATE employee_payroll set gender =
 UPDATE employee_payroll set gender =
 'F' where name = 'Ashwini';
 select * from employee_payroll;
+SELECT SUM(salary) FROM employee_payroll
+WHERE gender = 'M' GROUP BY gender;
+SELECT SUM(salary) FROM employee_payroll
+WHERE gender = 'F' GROUP BY gender;
+Select gender,Avg(salary) from employee_payroll group by gender;
+Select count(*) from employee_payroll; 
+select MIN(salary) from employee_payroll where gender = 'M';
+select MAX(salary) from employee_payroll where gender = 'M';
+
 
 
 
