@@ -20,6 +20,15 @@ select * from employee_payroll;
 select * from employee_payroll where name = 'Ashwini';
 select * from employee_payroll WHERE start BETWEEN CAST('2022-01-01'
 AS DATE) AND DATE(NOW());
+ALTER TABLE employee_payroll ADD gender char(1) AFTER name;
+UPDATE employee_payroll set gender =
+'M' where name = 'Shree' or name =
+'Raj' or name = 'Tej';
+UPDATE employee_payroll set gender =
+'F' where name = 'Ashwini';
+select * from employee_payroll;
+
+
 
 
 
