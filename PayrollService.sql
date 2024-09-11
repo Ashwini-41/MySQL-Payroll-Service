@@ -36,6 +36,13 @@ Select count(*) from employee_payroll;
 select MIN(salary) from employee_payroll where gender = 'M';
 select MAX(salary) from employee_payroll where gender = 'M';
 
+ALTER TABLE employee_payroll ADD COLUMN employee_phone VARCHAR(10),
+ADD COLUMN employee_address VARCHAR(50) DEFAULT "Pune",
+ADD COLUMN department VARCHAR(10) NOT NULL;
+
+SELECT * FROM employee_payroll;
+
+
 
 
 
