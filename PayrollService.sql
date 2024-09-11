@@ -42,6 +42,16 @@ ADD COLUMN department VARCHAR(10) NOT NULL;
 
 SELECT * FROM employee_payroll;
 
+ALTER TABLE employee_payroll
+ADD COLUMN basic_pay DECIMAL(15, 2),
+ADD COLUMN deductions DECIMAL(15, 2),
+ADD COLUMN taxable_pay DECIMAL(15, 2),
+ADD COLUMN income_tax DECIMAL(15, 2),
+ADD COLUMN net_pay DECIMAL(15, 2);
+
+select * from employee_payroll;
+
+
 
 
 
